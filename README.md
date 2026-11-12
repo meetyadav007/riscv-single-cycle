@@ -44,7 +44,7 @@ Python 3. On Windows, just double-click one of these:
 
 | File | What happens |
 |------|--------------|
-| `run_tests.bat` | Runs every testbench and says if they all passed. |
+| `run_tests.bat` | Runs the nine module and system testbenches and says if they all passed. |
 | `run_demo.bat` | Runs the demo program and prints each instruction as it executes. |
 | `run_demo_wave.bat` | Same as above, then opens the waveform in GTKWave. |
 
