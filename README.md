@@ -144,8 +144,9 @@ immediate).
 
 ## Tests
 
-`run_tests.bat` runs all of these. Each one prints `ALL TESTS PASSED` or a
-`FAIL` line for every mismatch.
+`run_tests.bat` runs the first nine of these (everything except `tb_demo`,
+which `run_demo.bat` runs). Each one prints `ALL TESTS PASSED` or a `FAIL` line
+for every mismatch.
 
 | Testbench | What it checks |
 |-----------|----------------|
@@ -233,6 +234,13 @@ no latches, no SystemVerilog), and all the testing was done in Icarus
 Verilog. I haven't run the Vivado script myself. The top module only has
 `alu_result` as an output, so for a real board you would need your own wrapper
 and constraints file.
+
+## References
+
+- *The RISC-V Instruction Set Manual, Volume I: Unprivileged ISA*, RISC-V International.
+- S. Harris and D. Harris, *Digital Design and Computer Architecture: RISC-V Edition*.
+  The single-cycle structure and the two-level ALU decoding (`alu_op` from the
+  control unit, then `funct3`/`funct7` in `alu_dec.v`) follow the design described there.
 
 ## If something goes wrong
 
